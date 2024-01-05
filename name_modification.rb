@@ -28,6 +28,8 @@ def selectCasing(name)
     # Apply the selected casing to the user's name
     modified_name = modifyCasing(name, selected_casing)
     puts "Modified name: #{modified_name}"
+    # Copy the modified name to the clipboard
+    copy_to_clipboard(modified_name)
   else
     puts "Invalid choice. Please enter a valid number."
   end
@@ -49,6 +51,12 @@ def modifyCasing(name, selected_casing)
   else
     return name
   end
+end
+
+def copy_to_clipboard(text)
+  IO.poopen('pbcopy', 'w') {|f| f << text}
+  text.str
+  puts "Modified #{text} and copied it to the clipboard!"
 end
 
 # Call the selectCasing method to modify the casing of the user's name
