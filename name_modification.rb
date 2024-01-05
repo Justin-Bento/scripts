@@ -54,7 +54,7 @@ def modifyCasing(name, selected_casing)
 end
 
 def copy_to_clipboard(text)
-  IO.poopen('pbcopy', 'w') {|f| f << text}
+  IO.popen('pbcopy', 'w') {|f| f << text}
   text.str
   puts "Modified #{text} and copied it to the clipboard!"
 end
