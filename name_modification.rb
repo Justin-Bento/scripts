@@ -53,6 +53,7 @@ def modifyCasing(name, selected_casing)
   end
 end
 
+# Function to copy text to the clipboard
 def copyToClipboard(text)
   IO.popen('pbcopy', 'w') {|f| f << text}
   puts "Modified #{text} and copied it to the clipboard!"
