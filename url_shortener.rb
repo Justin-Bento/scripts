@@ -9,6 +9,8 @@ def place_url
   else
     puts "Invalid URL entered. Please enter a valid URL."
   end
+  # shorten the link to have a max count of 60 characters.
+  # if the is under do not parse the url.
 end
 
 
