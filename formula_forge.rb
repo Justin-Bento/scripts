@@ -5,3 +5,6 @@
 def addition(va1, val2)
   return val1 + val2
 end
+
+result_addition = addition(5, 3)
+puts "Addition: #{result_addition}"
