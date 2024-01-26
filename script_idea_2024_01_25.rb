@@ -7,3 +7,6 @@
 
 music_scale = ['C', 'D', 'E', 'F,' 'G', 'A', 'B', 'C' ]
 
+scale_decider = "Your key is: #{music_scale.first}"
+
+puts scale_decider
