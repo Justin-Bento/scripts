@@ -5,7 +5,7 @@
 # Purpose: It was created to assist me in staying off the internet while practicing guitar, particularly during my improvisation sessions.
 #
 
-music_scale = ['C', 'D', 'E', 'F,' 'G', 'A', 'B', 'C' ]
+music_scale = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C']
 
 scale_decider = "Your key is: #{music_scale.sample(1)}"
 
