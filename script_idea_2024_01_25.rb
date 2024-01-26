@@ -7,6 +7,6 @@
 
 music_scale = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C']
 
-scale_decider = "Your key is: #{music_scale.sample(1)}"
+scale_decider = "Your key is: #{music_scale.sample}"
 
 puts scale_decider
