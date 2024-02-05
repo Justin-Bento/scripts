@@ -17,14 +17,17 @@ def needs(total_value)
 end
 
 def get_income
-  print "Enter after-tax income: "
-  income = gets.chomp
-  if income.match?(/[0-9]/)
-    puts "50% of your budget: $ #{necessities(income)}"
-    puts "30% of your budget: $ #{wants(income)}"
-    puts "20% of your budget: $ #{needs(income)}"
-  else
-    puts "Please enter a valid number"
+  loop do
+    print "Enter after-tax income: "
+    income = gets.chomp
+    if income.match?(/[0-9]/)
+      puts "50% of your budget: $ #{necessities(income)}"
+      puts "30% of your budget: $ #{wants(income)}"
+      puts "20% of your budget: $ #{needs(income)}"
+      break
+    else
+      puts "Please enter a valid number"
+    end
   end
 end
 
