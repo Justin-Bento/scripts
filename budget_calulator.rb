@@ -11,3 +11,7 @@ end
 def wants(total_value)
   total_value.to_i * 0.30 # Total value represents 30% of after-tax income
 end
+
+def needs(total_value)
+  total_value.to_i * 0.20 # Total value represents 20% of after-tax income
+end
