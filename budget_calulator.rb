@@ -7,3 +7,7 @@
 def necessities(total_value)
   total_value.to_i * 0.50 # Total value represents 50% of after-tax income
 end
+
+def wants(total_value)
+  total_value.to_i * 0.30 # Total value represents 30% of after-tax income
+end
