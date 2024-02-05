@@ -15,3 +15,13 @@ end
 def needs(total_value)
   total_value.to_i * 0.20 # Total value represents 20% of after-tax income
 end
+
+def get_income
+  print "Enter after-tax income: "
+  income = gets.chomp
+  puts "50% of your budget: $ #{necessities(income)}"
+  puts "30% of your budget: $ #{wants(income)}"
+  puts "20% of your budget: $ #{needs(income)}"
+end
+
+get_income
