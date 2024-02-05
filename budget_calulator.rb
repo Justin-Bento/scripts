@@ -5,15 +5,15 @@
 # While learning rubys input and output, logic opperators work inside ruby,
 
 def necessities(total_value)
-  total_value.to_i * 0.50 # Total value represents 50% of after-tax income
+  total_value.to_i * 0.50  # Determine 50% of the total income after taxes.
 end
 
 def wants(total_value)
-  total_value.to_i * 0.30 # Total value represents 30% of after-tax income
+  total_value.to_i * 0.30 # Determine 30% of the total income after taxes.
 end
 
 def needs(total_value)
-  total_value.to_i * 0.20 # Total value represents 20% of after-tax income
+  total_value.to_i * 0.20 # Determine 20% of the total income after taxes.
 end
 
 def get_income
