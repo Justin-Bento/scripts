@@ -16,19 +16,22 @@ def needs(total_value)
   total_value.to_i * 0.20 # Determine 20% of the total income after taxes.
 end
 
+# Define the method to get income
 def get_income
   loop do
     print "Enter after-tax income: "
     income = gets.chomp
     if income.match?(/[0-9]/)
+      # Output the budget breakdown based on income
       puts "50% of your budget: $ #{necessities(income)}"
       puts "30% of your budget: $ #{wants(income)}"
       puts "20% of your budget: $ #{needs(income)}"
-      break
+      break # Exit the loop
     else
-      puts "Please enter a valid number"
+      puts "Please enter a valid number" # Prompt for a valid number if input is not a number
     end
   end
 end
+
 
 get_income
