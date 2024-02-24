@@ -26,4 +26,6 @@
 #   - Each remaining player will participate in a single elimination rock-paper-scissors tournament.
 #   - Winners of each match advance to the next round until a final winner emerges.
 
+players = ['Alice', 'Bob', 'David', 'Emma', 'Frank', 'Grce', 'Henery', 'Ivy', 'Jack', 'Kate', 'Liam', 'Mia' ]
 
+puts players
