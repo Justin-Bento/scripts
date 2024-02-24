@@ -26,12 +26,18 @@
 #   - Each remaining player will participate in a single elimination rock-paper-scissors tournament.
 #   - Winners of each match advance to the next round until a final winner emerges.
 
-players = ['Alice', 'Bob', 'David', 'Emma', 'Frank', 'Grce', 'Henery', 'Ivy', 'Jack', 'Kate', 'Liam', 'Mia' ]
+players = ['Alice', 'Bob', 'David', 'Emma', 'Frank', 'Grace', 'Henry', 'Ivy', 'Jack', 'Kate', 'Liam', 'Mia']
 
-# Shuffle the array and select the first 12 names
-shuffle_players = players.shuffle.take(12)
+# Shuffle the array of players
+shuffled_players = players.shuffle
 
-# Print the randomly generated names
-shuffle_players.each_with_index do |shuffle_player, index|
-  puts "#{index +1}. #{shuffle_player}"
+# Define the number of groups and subgroups
+num_groups = 4
+players_per_group = (shuffled_players.length / num_groups.to_f).ceil
+
+# Divide the shuffled players into groups and subgroups
+shuffled_players.each_slice(players_per_group).with_index do |group, group_index|
+  group.each_slice((group.length / 2.0).ceil).with_index do |subgroup, subgroup_index|
+    puts "Team #{subgroup_index + 1}: #{subgroup.join(', ')}"
+  end
 end
