@@ -28,4 +28,10 @@
 
 players = ['Alice', 'Bob', 'David', 'Emma', 'Frank', 'Grce', 'Henery', 'Ivy', 'Jack', 'Kate', 'Liam', 'Mia' ]
 
-puts players
+# Shuffle the array and select the first 12 names
+shuffle_players = players.shuffle.take(12)
+
+# Print the randomly generated names
+shuffle_players.each_with_index do |shuffle_player, index|
+  puts "#{index +1}. #{shuffle_player}"
+end
