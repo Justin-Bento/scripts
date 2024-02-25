@@ -26,18 +26,22 @@
 #   - Each remaining player will participate in a single elimination rock-paper-scissors tournament.
 #   - Winners of each match advance to the next round until a final winner emerges.
 
-players = ['Alice', 'Bob', 'David', 'Emma', 'Frank', 'Grace', 'Henry', 'Ivy', 'Jack', 'Kate', 'Liam', 'Mia']
+players = {
+  red_team: ['Alice', 'Bob', 'David', 'Emma', 'Frank', 'Grace'],
+  blue_team: ['Henry', 'Ivy', 'Jack', 'Kate', 'Liam', 'Mia']
+}
 
-# Shuffle the array of players
-shuffled_players = players.shuffle
+# Extract players from the hash and shuffle them
+tournament_players = players.values.flatten.shuffle
 
-# Define the number of groups and subgroups
-num_groups = 4
-players_per_group = (shuffled_players.length / num_groups.to_f).ceil
+# Define the number of groups and calculate players per group and subgroup size
+num_groups = 3
+players_per_group = tournament_players.length / num_groups
+subgroup_size = (players_per_group / 2.0).ceil
 
 # Divide the shuffled players into groups and subgroups
-shuffled_players.each_slice(players_per_group).with_index do |group, group_index|
-  group.each_slice((group.length / 2.0).ceil).with_index do |subgroup, subgroup_index|
-    puts "Team #{subgroup_index + 1}: #{subgroup.join(', ')}"
+tournament_players.each_slice(players_per_group).with_index do |group, group_index|
+  group.each_slice(subgroup_size).with_index do |subgroup, subgroup_index|
+    puts "Group #{group_index + 1}, Subgroup #{subgroup_index + 1}: #{subgroup.join(', ')}"
   end
 end
