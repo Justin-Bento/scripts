@@ -27,8 +27,8 @@
 #   - Winners of each match advance to the next round until a final winner emerges.
 
 players = {
-  red_team: ['Alice', 'Bob', 'David', 'Emma', 'Frank', 'Grace'],
-  blue_team: ['Henry', 'Ivy', 'Jack', 'Kate', 'Liam', 'Mia']
+  redTeam: ['Alice', 'Bob', 'David', 'Emma', 'Frank', 'Grace'],
+  blueTeam: ['Henry', 'Ivy', 'Jack', 'Kate', 'Liam', 'Mia']
 }
 
 # Extract players from the hash and shuffle them
