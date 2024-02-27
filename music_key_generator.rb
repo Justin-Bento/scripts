@@ -10,6 +10,6 @@ music_scale = {
   minor: ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'Ebm', 'Bbm' 'Fm','Cm','Gm','Dm',],
 }
 
-scale_decider = "Your key is: #{music_scale.values.flatten}"
+scale_decider = "Your key is: #{music_scale.values.flatten.sample}"
 
 puts scale_decider
