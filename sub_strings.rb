@@ -9,8 +9,8 @@
 # -[]  Lastly, make sure your method can handle multiple words:.
 # -[]  Please note the order of your keys might be different.
 
-def substrings(word, diconary)
-  "Hello my name is #{word} and I am a #{diconary}"
+def substrings(word, dictionary)
+  "Hello my name is #{word} and I am a #{dictionary}"
 end
 
 puts substrings("Justin", "Human")
