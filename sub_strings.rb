@@ -13,4 +13,4 @@ def substrings(word, dictionary)
   "Hello my name is #{word} and I am a #{dictionary}"
 end
 
-puts substrings("Justin", "Human")
+puts substrings("Justin", dictionary)
