@@ -13,6 +13,7 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 
 def substrings(word, dictionary)
   result = []
+  word.downcase!
 end
 
 puts substrings("below", dictionary)
