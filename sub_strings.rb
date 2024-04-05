@@ -1,6 +1,6 @@
 # Author: Justin Bento
 # Start Date: 2024-03-18
-# End Date:
+# End Date: 2024-04-05
 # Assignment:
 # -[x] Implement a method #substrings that takes a word as the first argument and have a diconary as a second argument.
 # -[x]  The first argument should be an array of valid substrings which is your dictionary.
