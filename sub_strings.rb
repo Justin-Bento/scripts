@@ -19,6 +19,7 @@ def substrings(word, dictionary)
       result << index
     end
   end
+  result
 end
 
 puts substrings("below", dictionary)
