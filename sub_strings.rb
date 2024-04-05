@@ -9,7 +9,6 @@
 # -[]  Lastly, make sure your method can handle multiple words:.
 # -[]  Please note the order of your keys might be different.
 
-dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
 def substrings(word, dictionary)
   result = []
@@ -21,5 +20,7 @@ def substrings(word, dictionary)
   end
   result
 end
+
+dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
 puts substrings("below", dictionary)
