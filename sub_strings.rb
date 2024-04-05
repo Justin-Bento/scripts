@@ -14,6 +14,11 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 def substrings(word, dictionary)
   result = []
   word.downcase!
+  dictionary.each do |index|
+    if word.include?(index)
+      result << index
+    end
+  end
 end
 
 puts substrings("below", dictionary)
