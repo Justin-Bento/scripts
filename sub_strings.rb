@@ -9,6 +9,8 @@
 # -[]  Lastly, make sure your method can handle multiple words:.
 # -[]  Please note the order of your keys might be different.
 
+dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+
 def substrings(word, dictionary)
   "Hello my name is #{word} and I am a #{dictionary}"
 end
