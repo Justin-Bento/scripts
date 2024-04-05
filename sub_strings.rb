@@ -12,7 +12,6 @@
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
 def substrings(word, dictionary)
-  "Hello my name is #{word} and I am a #{dictionary}"
 end
 
 puts substrings("Justin", dictionary)
