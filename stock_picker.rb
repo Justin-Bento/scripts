@@ -18,3 +18,11 @@
 #
 # Pseudo Code:
 # ------------------------------------------------------------------------------
+
+def stock_picker(array)
+  array.join(", ")
+end
+
+name = ["Hello", "World"]
+
+puts stock_picker(name)
