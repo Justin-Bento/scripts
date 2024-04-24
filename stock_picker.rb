@@ -5,4 +5,11 @@
 # Assignment Breakdown:
 # ------------------------------------------------------------------------------
 # Pseudo Code:
+# [] Make a variable that holds an array of stock price values.
+# [] The stock-price variable will only contain an array of numerical values.
+# [] Our method #stock_picker takes in an array of stock prices.
+# [] It should return a pair of days representing the best day to buy.
+# [] It should return a second pair of days representing the best day to sell.
+# [] Ensure the user buys before selling.
+# [] Pay attention to edge cases such as when the lowest day is the last day or the highest day is the first day.
 # ------------------------------------------------------------------------------
