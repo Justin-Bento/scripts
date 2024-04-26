@@ -27,7 +27,7 @@
 # ------------------------------------------------------------------------------
 
 def stock_picker(array)
-  array.join(", ")
+  array.first
 end
 
 name = ["Hello", "World"]
