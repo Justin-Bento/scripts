@@ -30,6 +30,6 @@ def stock_picker(array)
   array.first
 end
 
-name = ["Hello", "World"]
+stock_price = ["Hello", "World"]
 
-puts stock_picker(name)
+puts stock_picker(stock_price)
