@@ -30,6 +30,7 @@ def stock_picker(prices)
   max_profit = 0
   best_days = []
   prices[buy_day+1..].each_with_index do |sell_price, sell_day|
+    profit = sell_price - buy_price
   end
 end
 
