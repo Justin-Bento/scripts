@@ -40,5 +40,5 @@ def stock_picker(prices)
 end
 
 stock_prices = [17, 3, 6, 9, 15, 8, 6, 1, 10]
-
+best_days = stock_picker(stock_prices)
 puts stock_picker(stock_price)
