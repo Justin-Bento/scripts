@@ -27,6 +27,8 @@
 # ------------------------------------------------------------------------------
 
 def stock_picker(array)
+  max_profit = 0
+  best_days = []
   array.first
 end
 
