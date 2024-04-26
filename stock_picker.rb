@@ -26,10 +26,10 @@
 # [] Pay attention to edge cases such as when the lowest day is the last day or the highest day is the first day.
 # ------------------------------------------------------------------------------
 
-def stock_picker(array)
+def stock_picker(prices)
   max_profit = 0
   best_days = []
-  array.first
+  prices.first
 end
 
 stock_price = [17,3,6,9,15,8,6,1,10]
