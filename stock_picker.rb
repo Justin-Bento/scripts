@@ -41,4 +41,4 @@ end
 
 stock_prices = [17, 3, 6, 9, 15, 8, 6, 1, 10]
 best_days = stock_picker(stock_prices)
-puts stock_picker(stock_price)
+puts "Best days to buy and sell: #{best_days} for a profit of #{stock_prices[best_days[1]] - stock_prices[best_days[0]]}"
