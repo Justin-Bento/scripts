@@ -36,6 +36,7 @@ def stock_picker(prices)
       best_days = [buy_day, sell_day + buy_day + 1]
     end
   end
+  best_days
 end
 
 stock_price = [17,3,6,9,15,8,6,1,10]
