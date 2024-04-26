@@ -29,7 +29,8 @@
 def stock_picker(prices)
   max_profit = 0
   best_days = []
-  prices.first
+  prices.each_with_index do | buy_price, buy_day |
+  end
 end
 
 stock_price = [17,3,6,9,15,8,6,1,10]
