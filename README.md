@@ -9,3 +9,7 @@ Is an interactive program that allows a user to input their name and select a ca
 ### Budget Calulator
 
 Calulate my after-tax income using the 50/30/20 budget rule in personal finance to help me automatically allocate my finance, without having to go online. My goal for this application is to learn Ruby's input and output, and how logic operators work inside Ruby.
+
+### Music Key Generator
+
+The purpose of this script is to aid me during practice by providing spontaneous key suggestions. By outputting a desired musical scale, the script ensures that the randomly selected key is appropriate and aligns with the a musical context. This functionality is useful for creating variety in practice routines, and explore different environments.
