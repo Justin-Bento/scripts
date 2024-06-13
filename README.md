@@ -13,3 +13,7 @@ Calulate my after-tax income using the 50/30/20 budget rule in personal finance 
 ### Music Key Generator
 
 The purpose of this script is to aid me during practice by providing spontaneous key suggestions. By outputting a desired musical scale, the script ensures that the randomly selected key is appropriate and aligns with the a musical context. This functionality is useful for creating variety in practice routines, and explore different environments.
+
+## Stock Picker • The Odin Project
+
+Followed the guidelines from The Odin Project Ruby Course to apply my knowledge.
