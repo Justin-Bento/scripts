@@ -6,4 +6,7 @@
 #
 
 class MusicScale
+  def initialize(key)
+    @key = key
+  end
 end
