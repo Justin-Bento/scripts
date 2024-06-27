@@ -16,7 +16,7 @@ class MusicScale
     }
     if music_scale[:major_key].include?(@key)
       puts "Your key #{@key} is a major key."
-    elseif music_scale[:minor_key].include?(@key)
+    elsif music_scale[:minor_key].include?(@key)
       puts "Your key #{@key} is a minor key."
     else
       puts "#{@key} is a is not recognized."
