@@ -9,4 +9,17 @@ class MusicScale
   def initialize(key)
     @key = key
   end
+  def signature_key
+    music_scale = {
+      major_key: ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'C#', 'F', 'Bb', 'Eb', 'Ab'],
+      minor_key: ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'A#m', 'Dm', 'Gm', 'Cm', 'Fm']
+    }
+    if music_scale[:major_key].include?(@key)
+      puts "Your key #{@key} is a major key."
+    elseif music_scale[:minor_key].include?(@key)
+      puts "Your key #{@key} is a minor key."
+    else
+      puts "#{@key} is a is not recognized."
+    end
+  end
 end
