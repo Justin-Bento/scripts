@@ -14,12 +14,20 @@ class MusicScale
       major_key: ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'C#', 'F', 'Bb', 'Eb', 'Ab'],
       minor_key: ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'D#m', 'A#m', 'Dm', 'Gm', 'Cm', 'Fm']
     }
-    if music_scale[:major_key].include?(@key)
-      puts "Your key #{@key} is a major key."
-    elsif music_scale[:minor_key].include?(@key)
-      puts "Your key #{@key} is a minor key."
+    all_keys = music_scale[:major_key] + music_scale[:minor_key]
+    random_key = all_keys.sample
+
+    if music_scale[:major_key].include?(random_key)
+      puts "Your random key is #{random_key}, which is a major key."
     else
-      puts "#{@key} is a is not recognized."
+      puts "Your random key is #{random_key}, which is a minor key."
     end
+
   end
 end
+
+# Create an instance of the MusicScale class
+scale = MusicScale.new('C')
+
+# Call the signature_key method to get a random key
+scale.signature_key
