@@ -5,11 +5,5 @@
 # Purpose: It was created to assist me in staying off the internet while practicing guitar, particularly during my improvisation sessions.
 #
 
-music_scale = {
-  major: ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C'],
-  minor: ['Am', 'Em', 'Bm', 'F#m', 'C#m', 'G#m', 'Ebm', 'Bbm' 'Fm','Cm','Gm','Dm',],
-}
-
-scale_decider = "Your key is: #{music_scale.values.flatten.sample}"
-
-puts scale_decider
+class MusicScale
+end
