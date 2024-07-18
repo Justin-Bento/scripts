@@ -7,3 +7,5 @@ class MusicScale
 end
 
 C_Major = MusicScale.new("C Major", ["C", "D", "E", "F", "G", "A", "B", "C"])
+
+puts C_Major.scale.sample
