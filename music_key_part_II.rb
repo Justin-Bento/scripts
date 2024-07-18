@@ -1,0 +1,3 @@
+class MusicScale
+
+end
