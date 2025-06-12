@@ -7,3 +7,6 @@
 #              The metronome will include features such as going silent for a few measures and reappearing at random intervals,
 #              allowing users to test their internal sense of rhythm.
 # Objective: To automate silent intervals so users can stay in flow without stopping the metronome.
+# Status: Prototype / In development
+# Requirements: Ruby 3.2+, no external gems yet
+# Usage: Run with `ruby metronome.rb` from terminal
