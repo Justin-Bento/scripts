@@ -1,4 +1,4 @@
-const message = "";
+const message = "Hello World";
 function HelloWorld() {
-  return "Hello World";
+  return;
 }
